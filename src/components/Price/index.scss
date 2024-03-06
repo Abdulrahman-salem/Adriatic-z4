@@ -1,0 +1,22 @@
+@use "/src/assets/styles/variables" as variables;
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    .reservation-last-price {
+        .last-price {
+            color: #ff5722;
+        }
+    }
+    .reservation-btn {
+        font-size: variables.$normal-font-size;
+
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background: #198754;
+        }
+    }
+}

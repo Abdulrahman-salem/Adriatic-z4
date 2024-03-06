@@ -1,0 +1,49 @@
+@use "/src/assets/styles/variables" as variables;
+
+.cards-container {
+    margin: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: stretch;
+    font-size: variables.$normal-font-size;
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px #606060 solid;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 7px 0px #0400ff;
+
+        picture {
+            overflow: hidden;
+            display: contents;
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .card-title {
+            padding: 10px 20px;
+            font-size: calc(variables.$normal-font-size + 4px);
+            box-shadow: 0 0 10px black;
+            border-radius: 50px;
+        }
+        .number-max-people {
+            span {
+                font-size: calc(variables.$normal-font-size + 1px);
+            }
+        }
+        .card-btn {
+            font-size: variables.$normal-font-size;
+
+            &:hover {
+                color: white;
+                background: #333;
+                cursor: pointer;
+            }
+        }
+    }
+}

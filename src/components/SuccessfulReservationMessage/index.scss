@@ -1,0 +1,34 @@
+@use "/src/assets/styles/variables" as variables;
+
+.successful-reservation-container {
+    font-size: variables.$normal-font-size;
+    width: 96%;
+    height: 92%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+
+    background: rgba(69, 61, 61, 0.76);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(69, 61, 61, 1);
+    color: white;
+
+    .back-home-btn {
+        font-size: variables.$normal-font-size;
+        padding: 5px 10px;
+        &:hover{
+            cursor: pointer;
+            color: white;
+            background: black;
+        }
+    }
+}
